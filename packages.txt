@@ -1,0 +1,25 @@
+# terminal
+zsh
+tmux
+bat
+eza
+btop
+duf
+fastfetch
+fzf
+ripgrep
+figlet
+fd
+
+# dev 
+git 
+git-lfs
+curl
+wget
+build-essential
+gcc
+g++
+make
+stow
+
+

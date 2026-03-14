@@ -1,0 +1,7 @@
+golang
+docker 
+nvim
+lazyvim
+lazygit
+lazydocker
+lazysql
