@@ -1,25 +1,26 @@
+# ---------- PATH ----------
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
+export PATH="/opt/nvim/bin:$PATH"
+export PATH="$HOME/.opencode/bin:$PATH"
+
 # ---------- History ----------
 HISTSIZE=10000
 SAVEHIST=10000
 setopt HIST_IGNORE_DUPS
 setopt SHARE_HISTORY
+setopt HIST_REDUCE_BLANKS
 
-# ---------- Completion ----------
+# ---------- Completion (cached) ----------
 autoload -Uz compinit
-compinit
-
-# ---------- PATH ----------
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:$HOME/go/bin"
-export PATH="/opt/nvim/bin:$PATH"
-export PATH="$HOME/.opencode/bin:$PATH"
+compinit -d ~/.cache/zsh/zcompdump
 
 # ---------- Tools ----------
 eval "$(zoxide init zsh)"
 
 # ---------- fnm ----------
 FNM_PATH="$HOME/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
+if [[ -d "$FNM_PATH" ]]; then
   export PATH="$FNM_PATH:$PATH"
   eval "$(fnm env)"
 fi
@@ -27,18 +28,18 @@ fi
 # ---------- bun ----------
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+[[ -s "$HOME/.bun/_bun" ]] && source "$HOME/.bun/_bun"
 
 # ---------- envman ----------
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+[[ -s "$HOME/.config/envman/load.sh" ]] && source "$HOME/.config/envman/load.sh"
 
-# ---------- aliases ----------
+# ---------- Aliases ----------
 alias bat=batcat
 alias curl='curlie'
 
-# ---------- prompt ----------
-eval "$(starship init zsh)"
-
-# ---------- antidote plugins ----------
+# ---------- Antidote ----------
 source ~/.antidote/antidote.zsh
 source ~/.zsh_plugins.zsh
+
+# ---------- Prompt ----------
+eval "$(starship init zsh)"

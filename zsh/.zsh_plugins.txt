@@ -1,23 +1,16 @@
-# autosuggestions
+# ---------- Core UX ----------
 zsh-users/zsh-autosuggestions
-
-# faster syntax highlight
 zdharma-continuum/fast-syntax-highlighting
 
-# completions
+# ---------- Completion ----------
 zsh-users/zsh-completions
-
-# tab completion UI
 Aloxaf/fzf-tab
 
-# history search
+# ---------- History ----------
 zsh-users/zsh-history-substring-search
 
-# oh-my-zsh plugins
+# ---------- Useful OMZ plugins ----------
 ohmyzsh/ohmyzsh path:plugins/git
-ohmyzsh/ohmyzsh path:plugins/docker
-ohmyzsh/ohmyzsh path:plugins/npm
 ohmyzsh/ohmyzsh path:plugins/extract
-ohmyzsh/ohmyzsh path:plugins/history
+ohmyzsh/ohmyzsh path:plugins/npm
 ohmyzsh/ohmyzsh path:plugins/z
-ohmyzsh/ohmyzsh path:plugins/fzf
