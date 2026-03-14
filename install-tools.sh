@@ -13,3 +13,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo "Installing Curlie..."
 curl -sS https://webinstall.dev/curlie | bash
+
+echo "Installing Atuin..."
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh -s -- --non-interactive

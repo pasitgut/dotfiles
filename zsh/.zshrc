@@ -43,3 +43,7 @@ source ~/.zsh_plugins.zsh
 
 # ---------- Prompt ----------
 eval "$(starship init zsh)"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
