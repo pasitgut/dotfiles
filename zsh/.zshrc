@@ -4,6 +4,21 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="/opt/nvim/bin:$PATH"
 export PATH="$HOME/.opencode/bin:$PATH"
 
+# ---------- Keybindings ----------
+# Ctrl + Arrow move by word
+bindkey "\e[1;5C" forward-word
+bindkey "\e[1;5D" backward-word
+
+# Ctrl + Backspace delete word
+bindkey '^H' backward-kill-word
+
+# Ctrl + Delete delete next word
+bindkey "\e[3;5~" kill-word
+
+# better word boundary (bash style)
+autoload -U select-word-style
+select-word-style bash
+
 # ---------- History ----------
 HISTSIZE=10000
 SAVEHIST=10000
