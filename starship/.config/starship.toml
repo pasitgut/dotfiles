@@ -1,0 +1,54 @@
+format = """
+[ ](fg:#a3aed2)\
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$rust\
+$golang\
+$php\
+$time\
+$cmd_duration
+
+$character
+"""
+
+[git_branch]
+symbol = ""
+style = "fg:#a3aed2"
+format = "[$symbol $branch ]($style)"
+
+[git_status]
+style = "fg:#e5c890" # ปรับเป็นสีออกเหลือง/ทองนิดๆ จะได้เห็นสถานะชัดๆ
+format = "[($all_status$ahead_behind )]($style)"
+
+[nodejs]
+symbol = ""
+style = "fg:#8aadf4"
+format = "[$symbol ($version) ]($style)"
+
+[rust]
+symbol = ""
+style = "fg:#8aadf4"
+format = "[$symbol ($version) ]($style)"
+
+[golang]
+symbol = ""
+style = "fg:#8aadf4"
+format = "[$symbol ($version) ]($style)"
+
+[php]
+symbol = ""
+style = "fg:#8aadf4"
+format = "[$symbol ($version) ]($style)"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:#a0a9cb"
+format = "[ $time ]($style)"
+
+[cmd_duration]
+min_time = 5000
+style = "fg:#e78284" # ปรับเป็นสีแดง/ชมพู ให้เตือนสายตาเวลาคำสั่งรันนานๆ
+format = "[ $duration]($style)"

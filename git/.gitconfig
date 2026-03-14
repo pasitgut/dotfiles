@@ -1,0 +1,22 @@
+[user]
+	name = PasitGut
+	email = pasitgut.dev@gmail.com
+[init]
+	defaultBranch = main
+[color]
+  ui = auto
+[core]
+  editor = nvim
+[pull]
+  rebase = false
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  cm = commit
+  lg = log --graph --oneline --decorate --all
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
