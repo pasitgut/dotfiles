@@ -76,7 +76,7 @@
   },
   "cursor_shape": "block",
   "cursor_blink": true,
-  "autosave": "on_window_change",
+  "autosave": "off",
   "file_types": {},
   "auto_indent_on_paste": true,
   "icon_theme": {
@@ -92,7 +92,7 @@
   "theme": {
     "mode": "dark",
     "light": "VSCode Dark Modern",
-    "dark": "Cursor Dark",
+    "dark": "Ayu Dark",
   },
   "lsp": {
     "vtsls": {
