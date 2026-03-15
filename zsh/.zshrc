@@ -62,3 +62,9 @@ eval "$(starship init zsh)"
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
+# Load KKU Al
+if [ -f ~/.opencode/kku-api-key ]; then
+  export $(cat ~/.opencode/kku-api-key | xargs)
+fi
+

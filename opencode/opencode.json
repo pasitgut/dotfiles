@@ -1,0 +1,278 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "kku/gemini-3-flash-preview",
+  "plugin": ["@slkiser/opencode-quota"],
+  "provider": {
+    "kku": {
+      "id": "kku",
+      "name": "KKU Intelsphere",
+      "npm": "@ai-sdk/openai-compatible",
+      "api": "openai",
+      "env": ["KKU_API_KEY"],
+      "options": {
+        "baseURL": "https://gen.ai.kku.ac.th/api/v1"
+      },
+      "models": {
+        "gemini-2.5-flash-lite": {
+          "id": "gemini-2.5-flash-lite",
+          "providerID": "kku",
+          "name": "Gemini 2.5 Flash Lite",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 65000, "input": 65000, "output": 8000, "quota": 350000 }
+        },
+        "gemini-2.5-flash": {
+          "id": "gemini-2.5-flash",
+          "providerID": "kku",
+          "name": "Gemini 2.5 Flash",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 1000000, "input": 1000000, "output": 8000, "quota": 350000 }
+        },
+        "gemini-2.5-pro": {
+          "id": "gemini-2.5-pro",
+          "providerID": "kku",
+          "name": "Gemini 2.5 Pro",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 1000000, "input": 1000000, "output": 8000, "quota": 350000 }
+        },
+        "gemini-3-flash-preview": {
+          "id": "gemini-3-flash-preview",
+          "providerID": "kku",
+          "name": "Gemini 3 Flash Preview",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 1000000, "input": 1000000, "output": 8000, "quota": 350000 }
+        },
+        "gemini-3-pro-preview": {
+          "id": "gemini-3-pro-preview",
+          "providerID": "kku",
+          "name": "Gemini 3 Pro Preview",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 1000000, "input": 1000000, "output": 8000, "quota": 350000 }
+        },
+        "gemini-3.1-flash-lite-preview": {
+          "id": "gemini-3.1-flash-lite-preview",
+          "providerID": "kku",
+          "name": "Gemini 3.1 Flash Lite Preview",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 65000, "input": 65000, "output": 8000, "quota": 350000 }
+        },
+        "gemini-3.1-pro-preview": {
+          "id": "gemini-3.1-pro-preview",
+          "providerID": "kku",
+          "name": "Gemini 3.1 Pro Preview",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 1000000, "input": 1000000, "output": 8000, "quota": 350000 }
+        },
+        "claude-sonnet-4.6": {
+          "id": "claude-sonnet-4.6",
+          "providerID": "kku",
+          "name": "Claude Sonnet 4.6",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "claude-sonnet-4.5": {
+          "id": "claude-sonnet-4.5",
+          "providerID": "kku",
+          "name": "Claude Sonnet 4.5",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "claude-haiku-4.5": {
+          "id": "claude-haiku-4.5",
+          "providerID": "kku",
+          "name": "Claude Haiku 4.5",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "claude-sonnet-4": {
+          "id": "claude-sonnet-4",
+          "providerID": "kku",
+          "name": "Claude Sonnet 4",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "claude-3.7-sonnet": {
+          "id": "claude-3.7-sonnet",
+          "providerID": "kku",
+          "name": "Claude 3.7 Sonnet",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "deepseek-v3.2": {
+          "id": "deepseek-v3.2",
+          "providerID": "kku",
+          "name": "DeepSeek V3.2",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 64000, "input": 64000, "output": 8000, "quota": 1000000 }
+        },
+        "deepseek-v3.2-exp": {
+          "id": "deepseek-v3.2-exp",
+          "providerID": "kku",
+          "name": "DeepSeek V3.2 Exp",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 64000, "input": 64000, "output": 8000, "quota": 1000000 }
+        },
+        "deepseek-chat-v3.1": {
+          "id": "deepseek-chat-v3.1",
+          "providerID": "kku",
+          "name": "DeepSeek Chat V3.1",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 64000, "input": 64000, "output": 8000, "quota": 1000000 }
+        },
+        "llama-4-maverick": {
+          "id": "llama-4-maverick",
+          "providerID": "kku",
+          "name": "Llama 4 Maverick",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "llama-4-scout": {
+          "id": "llama-4-scout",
+          "providerID": "kku",
+          "name": "Llama 4 Scout",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "mistral-large-2512": {
+          "id": "mistral-large-2512",
+          "providerID": "kku",
+          "name": "Mistral Large 2512",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 150000 }
+        },
+        "mistral-medium-3": {
+          "id": "mistral-medium-3",
+          "providerID": "kku",
+          "name": "Mistral Medium 3",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 150000 }
+        },
+        "codestral-2508": {
+          "id": "codestral-2508",
+          "providerID": "kku",
+          "name": "Codestral 2508",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 150000 }
+        },
+        "devstral-medium": {
+          "id": "devstral-medium",
+          "providerID": "kku",
+          "name": "Devstral Medium",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 150000 }
+        },
+        "codestral-2501": {
+          "id": "codestral-2501",
+          "providerID": "kku",
+          "name": "Codestral 2501",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 150000 }
+        },
+        "nova-pro-v1": {
+          "id": "nova-pro-v1",
+          "providerID": "kku",
+          "name": "Nova Pro V1",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "providerID": "kku",
+          "name": "GPT 5.2",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "gpt-5.1": {
+          "id": "gpt-5.1",
+          "providerID": "kku",
+          "name": "GPT 5.1",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "gpt-5.1-codex": {
+          "id": "gpt-5.1-codex",
+          "providerID": "kku",
+          "name": "GPT 5.1 Codex",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "gpt-5": {
+          "id": "gpt-5",
+          "providerID": "kku",
+          "name": "GPT 5",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "gpt-5-mini": {
+          "id": "gpt-5-mini",
+          "providerID": "kku",
+          "name": "GPT 5 Mini",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "gpt-5-nano": {
+          "id": "gpt-5-nano",
+          "providerID": "kku",
+          "name": "GPT 5 Nano",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 200000, "input": 200000, "output": 8000, "quota": 150000 }
+        },
+        "qwen3-235b-a22b-2507": {
+          "id": "qwen3-235b-a22b-2507",
+          "providerID": "kku",
+          "name": "Qwen3 235B",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "qwen3-next-80b-a3b-instruct": {
+          "id": "qwen3-next-80b-a3b-instruct",
+          "providerID": "kku",
+          "name": "Qwen3 Next 80B",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "qwen3-coder-flash": {
+          "id": "qwen3-coder-flash",
+          "providerID": "kku",
+          "name": "Qwen3 Coder Flash",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "qwen3-coder": {
+          "id": "qwen3-coder",
+          "providerID": "kku",
+          "name": "Qwen3 Coder",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "qwen3-vl-32b-instruct": {
+          "id": "qwen3-vl-32b-instruct",
+          "providerID": "kku",
+          "name": "Qwen3 VL 32B",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "grok-4.1-fast": {
+          "id": "grok-4.1-fast",
+          "providerID": "kku",
+          "name": "Grok 4.1 Fast",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "grok-4": {
+          "id": "grok-4",
+          "providerID": "kku",
+          "name": "Grok 4",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        },
+        "grok-3": {
+          "id": "grok-3",
+          "providerID": "kku",
+          "name": "Grok 3",
+          "cost": { "input": 0, "output": 0 },
+          "limit": { "context": 128000, "input": 128000, "output": 8000, "quota": 200000 }
+        }
+      }
+    }
+  }
+}
