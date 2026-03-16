@@ -50,7 +50,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # ---------- Aliases ----------
 alias bat=batcat
-alias curl='curlie'
+# alias curl='curlie'
 
 # ---------- Antidote ----------
 source ~/.antidote/antidote.zsh

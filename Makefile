@@ -1,5 +1,5 @@
 install:
-	sudo dnf install -y $(grep -v '^#' packages.txt)
+	sudo dnf install -y $(shell grep -v '^#' packages.txt) --skip-unavailable
 
 tools:
 	bash install-tools.sh
