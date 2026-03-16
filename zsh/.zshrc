@@ -1,10 +1,8 @@
 # ---------- PATH ----------
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:/usr/local/go/bin"
 export PATH="$HOME/.opencode/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-. "$HOME/.cargo/env"
-export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:$HOME/go/bin"
 # ---------- Keybindings ----------
 # Ctrl + Arrow move by word
 bindkey "\e[1;5C" forward-word
@@ -71,3 +69,4 @@ if [ -f ~/.opencode/kku-api-key ]; then
   export $(cat ~/.opencode/kku-api-key | xargs)
 fi
 
+eval "$(~/.local/bin/mise activate zsh)"
