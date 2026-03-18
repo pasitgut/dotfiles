@@ -92,7 +92,7 @@
   "theme": {
     "mode": "dark",
     "light": "VSCode Dark Modern",
-    "dark": "Ayu Dark",
+    "dark": "Gruvbox Dark Hard",
   },
   "lsp": {
     "vtsls": {
